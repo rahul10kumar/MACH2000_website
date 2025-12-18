@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> MACH 2000 - Visa Sponsorship Timeline</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    body {
+        padding-top: 56px;
+        background: url("Asr_bg_visa.jpg") no-repeat center top;
+        background-size: cover;
+        background-attachment: scroll;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+
+    .transparent-navbar {
+        background-color: rgba(0, 0, 0, 0) !important;
+        transition: background-color 0.4s ease;
+    }
+
+    .transparent-navbar.scrolled {
+        background-color: rgba(0, 0, 0, 0.85) !important;
+    }
+
+    /* TIMELINE */
+    .timeline-container {
+        position: relative;
+        padding: 50px 0;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .timeline-line {
+        position: absolute;
+        left: 50%;
+        width: 4px;
+        background: #d2d3db;
+        top: 450px;
+        /* << Fix: don't cut heading */
+        bottom: 130px;
+        transform: translateX(-50%);
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: 50%;
+        width: 22px;
+        height: 22px;
+        background: black;
+        border: 4px solid #ab98ff;
+        border-radius: 50%;
+        top: 450px;
+        /* << Fix: align with line */
+        bottom: 130px;
+        transform: translateX(-50%);
+        transition: top 0.15s linear;
+        z-index: 10;
+    }
+
+
+    .timeline-item {
+        position: relative;
+        width: 50%;
+        padding: 20px 0;
+    }
+
+    .timeline-item.left {
+        left: 0;
+        text-align: right;
+        padding-right: 50px;
+    }
+
+    .timeline-item.right {
+        left: 50%;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    /* --- REVISED .timeline-card STYLES FOR GLASS EFFECT --- */
+    .timeline-card {
+        /* Glass Effect: semi-transparent white/light background */
+        background-color: rgba(255, 255, 255, 0.1); 
+        
+        /* Frosted Glass Effect (optional, modern look) */
+        backdrop-filter: blur(8px); 
+        
+        /* Remove the background image, size, and min-height fixes */
+        /* background: none; */ 
+        /* background-size: auto; */ 
+        min-height: auto; /* Allow height to be determined by content */
+
+        /* Original Styling */
+        border-left: 5px solid rgba(100, 157, 255, 0.4); /* Make border slightly visible */
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Use a darker, subtle shadow */
+        transition: 0.3s ease;
+    }
+
+    .timeline-card.pop {
+        transform: scale(1.06);
+        /* Make the shadow more prominent when hovered */
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+    }
+
+    .timeline-card h3 {
+        /* Making heading dark for better readability on light glass background */
+        color: #ffffff; 
+        margin-bottom: 15px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 6px;
+        /* Making list text dark for better readability */
+        color: #ffffff; 
+    }
+    /* ---------------------------------------------------- */
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+        .timeline-line {
+            left: 25px !important;
+            top: 450px;
+            bottom: 70px;
+            transform: none !important;
+        }
+
+        .timeline-dot {
+            left: 25px !important;
+            top: 450px;
+            bottom: 70px;
+            transform: translate(-50%, -10px) !important;
+        }
+
+        .timeline-item {
+            width: 100% !important;
+            left: 0 !important;
+            padding-left: 60px !important;
+            padding-right: 0 !important;
+            text-align: left !important;
+        }
+
+        .timeline-item.left,
+        .timeline-item.right {
+            text-align: left !important;
+            padding-left: 60px !important;
+            padding-right: 0 !important;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="mach_logo.png" alt="Logo" width="80" height="40" class="me-2">
+                 MACH 2000, INC
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#CompanyOverview">About  MACH 2000</a></li>
+                    <li class="nav-item"><a class="nav-link" href="IT_Staffing_&_Recruitment.html">IT Staffing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Visa_Sponsorship.html">Visa Sponsorship</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contact_Us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- TIMELINE SECTION -->
+    <section class="timeline-container">
+
+        <h1 class="text-center fw-bold mb-5" style="color:#ffffff;">🌎 Visa Sponsorship</h1>
+        <h2 class="text-center fw-bold mb-2" style="color:#ffffff;">Supporting Global Talent for U.S. Careers</h2>
+        <p class="lead py-4 text-center mb-5">
+             MACH 2000, INC believes that great talent knows no borders. We provide services to U.S.
+            Citizens as well as visa sponsorship and immigration assistance for qualified foreign candidates who meet
+            U.S. employment eligibility criteria.
+        </p>
+
+        <br>
+
+        <!-- Center Line -->
+        <div class="timeline-line"></div>
+        <div class="timeline-dot" id="timelineDot"></div>
+
+        <!-- CARD 1 -->
+        <div class="timeline-item left " data-step="0.1">
+            <div class="timeline-card text-center">
+              
+                <h3>Programs Supported</h3>
+                <ul>
+                    <li>H-1B Sponsorship (new filings & transfers)</li>
+                    <li>OPT / CPT Employment</li>
+                    <li>Green Card Sponsorship (EB-2 / EB-3)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="timeline-item right" data-step="0.3">
+            <div class="timeline-card text-center">
+            
+                <h3>Eligibility & Policy</h3>
+                <ul>
+                    <li>Case-by-case sponsorship evaluation</li>
+                    <li>Must meet education & experience requirements</li>
+                    <li>Full USCIS & US DOL compliance</li>
+                    <li>Transparent and ethical process</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="timeline-item left" data-step="0.55">
+            <div class="timeline-card text-center">
+             
+                <h3>Typical Process</h3>
+                <ul>
+                    <li>1. Application screening</li>
+                    <li>2. Eligibility verification</li>
+                    <li>3. H-1B / LCA initiation (if applicable)</li>
+                    <li>4. Filing via immigration partners</li>
+                    <li>5. Onboarding after approval</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="timeline-item right" data-step="0.8">
+            <div class="timeline-card text-center">
+              
+                <h3>Why Choose  MACH 2000</h3>
+                <ul>
+                    <li>Proven successful filings</li>
+                    <li>Dedicated legal coordination</li>
+                    <li>Clear communication at every step</li>
+                    <li>Long-term stability & assignments</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+<br>
+
+    <div class="text-center mb-5">
+        <a href="mailto:hr@americansoftwareresources.com">
+            <button class="btn btn-lg" style="background:#d4af37;color:black;font-weight:bold;">
+                Check Your Visa Eligibility → info@mach2000technologies.com
+            </button>
+        </a>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener("scroll", () => {
+            document.querySelector(".transparent-navbar")
+                .classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+        // Timeline Animation
+        const timeline = document.querySelector(".timeline-container");
+        const dot = document.getElementById("timelineDot");
+        const items = document.querySelectorAll(".timeline-item");
+
+        let duration = 6000;
+        let startTime = null;
+
+        function getCenterY(el) {
+            return el.offsetTop + el.clientHeight / 2;
+        }
+
+        const firstY = getCenterY(items[0]);
+        const lastY = getCenterY(items[items.length - 1]);
+        const distance = lastY - firstY;
+
+        function animate(ts) {
+            if (!startTime) startTime = ts;
+
+            let progress = (ts - startTime) / duration;
+            if (progress > 1) { startTime = ts; progress = 0; }
+
+            let currentY = firstY + distance * progress;
+            dot.style.top = currentY + "px";
+
+            items.forEach(item => {
+                let step = parseFloat(item.dataset.step);
+                const card = item.querySelector(".timeline-card");
+
+                card.classList.toggle("pop", progress >= step);
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        requestAnimationFrame(animate);
+    </script>
+
+</body>
+
+</html>
