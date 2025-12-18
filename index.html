@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MACH 2000</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+
+
+            padding-top: 56px;
+            /* matches Bootstrap 5 navbar height */
+            background: url("Asr_bg_website.jpg") no-repeat center top;
+            background-size: cover;
+            background-attachment: scroll;
+            font-family: Arial, sans-serif;
+        }
+
+        .cover-overlay {
+            background-color: rgba(0, 0, 0, 0.0);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .CompanyOverview-section,
+        .industries-section {
+            padding: 50px 0;
+        }
+
+        /*.CompanyOverview-section {
+            background-color: #f8f9fa;
+        }
+
+        .industries-section {
+            background-color: #e9ecef;
+        }*/
+
+        .card-body h5 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .cover {
+            height: 100vh;
+
+            background-size: cover;
+            /* color: white;*/
+            position: relative;
+            /*background: url('ASR_bg.png') no-repeat center center/cover;*/
+            min-height: 100vh;
+            /* full screen height */
+        }
+
+        .CompanyOverview-section {
+
+
+
+            background-size: cover;
+            /* color: white;*/
+            position: relative;
+            /* background: url('ASR_n_bg2.png') no-repeat center center/cover;*/
+        }
+
+        .cover-overlay {
+            background: rgba(0, 0, 0, 0.0);
+            /* dark overlay for readability */
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .transparent-navbar {
+            background-color: rgba(0, 0, 0, 0) !important;
+            /* fully transparent */
+            transition: background-color 0.4s ease;
+            /* smooth transition */
+        }
+
+        .transparent-navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.8) !important;
+            /* 50% opacity */
+        }
+
+
+        /* Fade animation */
+        .fade-text {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fade-text.show {
+            opacity: 1;
+        }
+
+        .green-card-section {
+            background-color: rgba(0, 0, 0, 0);
+            /* black background */
+            padding: 80px 20px;
+        }
+
+        .green-card-section h1 {
+            color: #d4af37;
+            /* gold look */
+        }
+
+        .green-card-section h2 {
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .green-card-section ul li {
+            font-size: 1.1rem;
+        }
+
+        .green-card-section p,
+        .green-card-section h4 {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.35;
+            /* transparent so text is visible */
+        }
+    </style>
+</head>
+
+<body class="text-white bg-dark">
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
+        <div class="container">
+            <!-- Logo + Company Name -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="mach_logo.png" alt="Logo" width="80" height="40" class="me-2">
+                MACH 2000, Inc
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#CompanyOverview">About  MACH 2000</a></li>
+                    <li class="nav-item"><a class="nav-link" href="IT_Staffing_&_Recruitment.html">IT Staffing &
+                            Recruitment (USA)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Visa_Sponsorship.html">Visa Sponsorship</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact_Us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Cover Section -->
+    <section class="cover">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="cover.mp4" type="video/mp4">
+        </video>
+        <div class="cover-overlay">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left Side: Text -->
+                    <div class="col-md-6 text-center">
+                        <h1 class="display-5 fw-bold"> MACH 2000, Inc</h1>
+                        <br>
+                        <!-- Rotating Content -->
+                        <div id="rotating-content">
+                            <h2 class="display-7 fw-bold fade-text">Simplifying IT</h2>
+                            <p class="lead fade-text">We determine the best possible solution that fits your need &
+                                budget.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Buttons -->
+                    <div class="col-md-6 text-center mt-3 mt-md-0">
+                        <a href="#jobs" class="btn btn-primary btn-lg me-2">Find Job</a>
+                        <a href="#hire" class="btn btn-outline-light btn-lg">Hire Talent</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Us Section -->
+    <section id="CompanyOverview" class="CompanyOverview-section">
+        <div class="container fs-5">
+            <br>
+
+            <h2 class="display-5 fw-bold  d-flex flex-row justify-content-center">Empowering America’s IT Workforce</h2>
+
+
+            <p class="lead py-3 text-center">
+                MACH 2000, Inc is a U.S.-based IT staffing and recruitment company helping
+                enterprises find exceptional technology talent across the nation.
+                For over two decades, MACH 2000 has connected skilled developers, analysts, and engineers with leading
+                U.S. organizations — building long-term relationships based on trust, compliance, and
+                performance.
+            </p>
+            <br>
+            <div class="row py-4    ">
+                <div class="col-md-6">
+                    <h2 id="mission-heading">Our Mission</h2>
+                    <p class="lead">
+                        To bridge the gap between opportunity and talent through transparent, ethical, and efficient
+                        staffing solutions.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <!-- <img src="recuitment.png" alt="About Us" class="img-fluid rounded shadow">-->
+
+
+                    <h2 id="vision-heading">Our Vision</h2>
+                    <p class="lead">
+                        To become the most trusted partner for technology recruitment in the United States,
+                        supporting
+                        both employers and professionals in achieving their growth goals.
+                    </p>
+
+
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-md-6">
+                    <img src="recuitment.png" alt="About Us" class="img-fluid rounded shadow"
+                        style="width: 400px; height: auto;">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <!-- <img src="recuitment.png" alt="About Us" class="img-fluid rounded shadow">-->
+
+
+                    <h2 id="values-heading">Core Values</h2>
+                    <ul>
+                        <li>Integrity and compliance in every engagement</li>
+                        <li>Candidate-first experience with honest guidance</li>
+                        <li>Diversity, inclusion, and equal opportunity</li>
+                        <li>Transparent processes and long-term partnerships</li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+
+                    <h2 id="values-heading">Quick Stats</h2>
+                    <ul>
+                        <li>Experience in U.S. IT staffing</li>
+                        <li>Successful placements nationwide</li>
+                        <li>Active sponsorship program for eligible candidates</li>
+                        <li>Offices in New York and regional partnerships across the U.S.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="recuitment.png" alt="About Us" class="img-fluid rounded shadow"
+                        style="width: 400px; height: auto;">
+
+
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-md-6">
+
+
+
+                    <h2 id="mission-heading">Our Mission</h2>
+                    <p class="lead">
+                        To bridge the gap between opportunity and talent through transparent, ethical, and efficient
+                        staffing solutions.
+                    </p>
+
+
+
+                    <h2 id="values-heading">Core Values</h2>
+                    <ul>
+                        <li>Integrity and compliance in every engagement</li>
+                        <li>Candidate-first experience with honest guidance</li>
+                        <li>Diversity, inclusion, and equal opportunity</li>
+                        <li>Transparent processes and long-term partnerships</li>
+                    </ul>
+
+                    <h2 id="values-heading">Quick Stats</h2>
+                    <ul>
+                        <li>Experience in U.S. IT staffing</li>
+                        <li>Successful placements nationwide</li>
+                        <li>Active sponsorship program for eligible candidates</li>
+                        <li>Offices in New York and regional partnerships across the U.S.</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-6">
+                    <- <img src="recuitment.png" alt="About Us" class="img-fluid rounded shadow">->
+                    <div class="col-md-6">
+
+
+                        <h2 id="vision-heading">Our Vision</h2>
+                        <p class="lead">
+                            To become the most trusted partner for technology recruitment in the United States,
+                            supporting
+                            both employers and professionals in achieving their growth goals.
+                        </p>
+
+
+                        <h2 id="values-heading">Quick Stats</h2>
+                        <ul>
+                            <li>Experience in U.S. IT staffing</li>
+                            <li>Successful placements nationwide</li>
+                            <li>Active sponsorship program for eligible candidates</li>
+                            <li>Offices in New York and regional partnerships across the U.S.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Green Card Section -->
+    <section class="green-card-section py-5 text-center text-light">
+        <div class="container">
+            <!-- Heading -->
+            <h2 class="fw-bold text-uppercase mb-3">Secure Your Future With</h2>
+            <h1 class="fw-bold text-warning mb-4"> MACH 2000, Inc.</h1>
+
+            <!-- Logo -->
+            <div class="mb-4">
+                <img src="mach_logo.png" alt="ASR Logo" class="img-fluid" style="max-width: 280px;">
+            </div>
+
+            <!-- Subheading -->
+            <h5 class="fw-bold mb-4">
+                Is your employer delaying your Green Card process?<br>
+                Don’t wait — take control of your future today.
+            </h5>
+
+            <!-- Benefits List -->
+            <ul class="list-unstyled text-start d-inline-block">
+                <li class="mb-3">
+                    ✅ <strong>Immediate Green Card Initiation</strong> – We start your process right away.
+                </li>
+                <li class="mb-3">
+                    ✅ <strong>PWD Filing in Advance</strong> – We file for your PWD even before your transfer.
+                </li>
+                <li class="mb-3">
+                    ✅ <strong>Seamless Transfer Process</strong> – All you need is an active project and eligibility to
+                    transfer.
+                </li>
+            </ul>
+
+            <!-- Paragraph -->
+            <p class="lead mt-4">
+                At  MACH 2000, Inc., we believe your career growth and stability should never be on
+                hold.
+                With over 25 years of trusted experience, we are committed to securing your long-term future in the U.S.
+            </p>
+
+            <!-- Call to Action -->
+            <p class="fw-bold text-danger mt-3">
+                📌 Join us today and step into a future of certainty and success.
+            </p>
+
+            <h4 class="fw-bold text-warning mt-4">
+                ⚡ Your Green Card journey starts here. Secure. Reliable. Immediate. ⚡
+            </h4>
+        </div>
+    </section>
+
+
+    <!-- Industries We Specialize In Section -->
+    <section id="industries" class="industries-section">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-5">Industries We Specialize In</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Manufacturing Card -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-dark">
+                        <img src="Manufacturing.png" class="card-img-top" alt="Manufacturing">
+                        <div class="card-body">
+                            <h5 class="card-title">Manufacturing</h5>
+                            <p class="card-text">We specialize in providing solutions to the manufacturing industry,
+                                improving efficiency and productivity through innovative technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Industry Card -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-dark">
+                        <img src="service_industry.png" class="card-img-top" alt="Service Industry">
+                        <div class="card-body">
+                            <h5 class="card-title">Service Industry</h5>
+                            <p class="card-text">Our solutions help businesses in the service industry enhance customer
+                                experiences and streamline operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hospitality Card -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-dark">
+                        <img src="Hospitality.png" class="card-img-top" alt="Hospitality">
+                        <div class="card-body">
+                            <h5 class="card-title">Hospitality</h5>
+                            <p class="card-text">We provide tailored services to the hospitality industry, focusing on
+                                guest satisfaction and operational efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Healthcare Card -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-dark">
+                        <img src="Healthcare.png" class="card-img-top" alt="Healthcare">
+                        <div class="card-body">
+                            <h5 class="card-title">Healthcare</h5>
+                            <p class="card-text">Our expertise extends to the healthcare sector, where we deliver
+                                solutions that improve patient care and hospital management.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Energy and Power Card -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-dark">
+                        <img src="energya_and_power.png" class="card-img-top" alt="Energy and Power">
+                        <div class="card-body">
+                            <h5 class="card-title">Energy and Power</h5>
+                            <p class="card-text">We offer advanced technologies that optimize operations in the energy
+                                and power sectors, driving sustainability and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Information Technology Card -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-dark">
+                        <img src="IT_services.png" class="card-img-top" alt="Information Technology">
+                        <div class="card-body">
+                            <h5 class="card-title">Information Technology</h5>
+                            <p class="card-text">We provide cutting-edge IT solutions that cater to businesses, helping
+                                them stay ahead in the fast-evolving tech landscape.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Software Development Card -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-dark">
+                        <img src="software_development.png" class="card-img-top" alt="Software Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text">Our custom software development services enable businesses to build
+                                scalable, robust, and secure applications for their operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Telecom Card -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-dark">
+                        <img src="Telecom.png" class="card-img-top" alt="Telecom">
+                        <div class="card-body">
+                            <h5 class="card-title">Telecom</h5>
+                            <p class="card-text">We specialize in telecom solutions that enhance connectivity and
+                                communication across various networks and devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Electronics Card -->
+                <div class="col">
+                    <div class="card h-100 text-white bg-dark">
+                        <img src="Electronics.png" class="card-img-top" alt="Electronics">
+                        <div class="card-body">
+                            <h5 class="card-title">Electronics</h5>
+                            <p class="card-text">We provide state-of-the-art solutions for the electronics industry,
+                                focusing on innovation, design, and performance enhancement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+
+        const navbar = document.querySelector('.transparent-navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+
+        // Messages to rotate
+        const messages = [
+            {
+                title: "Simplifying IT",
+                text: "We determine the best possible solution that fits your need & budget."
+            },
+            {
+                title: "Real World Solutions",
+                text: "We have worked with a diverse customer base. We can help you too."
+            },
+            {
+                title: "Pragmatic Approach",
+                text: "Providing exceptional service to our new & existing clients will always be our top pirority."
+            }
+        ];
+
+        let index = 0;
+        const titleEl = document.querySelector("#rotating-content h2");
+        const textEl = document.querySelector("#rotating-content p");
+
+        function showMessage() {
+            // Fade out
+            titleEl.classList.remove("show");
+            textEl.classList.remove("show");
+
+            setTimeout(() => {
+                // Change content
+                titleEl.textContent = messages[index].title;
+                textEl.textContent = messages[index].text;
+
+                // Fade in
+                titleEl.classList.add("show");
+                textEl.classList.add("show");
+
+                // Next index (loop back)
+                index = (index + 1) % messages.length;
+            }, 1000); // matches fade-out duration
+        }
+
+        // Initialize
+        showMessage();
+        setInterval(showMessage, 5000); // every 3 seconds
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<!-- Footer -->
+<footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-1">&copy; 2025  MACH 2000. All rights reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Terms of Service</a></li>
+            <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+</html>
