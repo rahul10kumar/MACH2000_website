@@ -12,11 +12,12 @@
         body {
             padding-top: 56px;
             /* Using the background from the previous pages for visual consistency */
-            background: url("mach2000.png") no-repeat center top; 
+            background: url("mach2000_1.png") no-repeat center top;
             background-size: cover;
             background-attachment: scroll;
             font-family: Arial, sans-serif;
-            color: #1f1f1f; /* Default body text is white */
+            color: #ffffff;
+            /* Default body text is white */
         }
 
         .page-section {
@@ -29,10 +30,12 @@
         }
 
         .transparent-navbar.scrolled {
-            background-color: rgba(231, 87, 15) !important;
+            background-color: rgba(21, 21, 21) !important;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: #ff812d;
         }
 
@@ -62,34 +65,37 @@
             backdrop-filter: blur(8px);
             /* Shadow for depth */
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            
-            border: none; /* Removing the dark border */
+
+            border: none;
+            /* Removing the dark border */
             border-radius: 12px;
             padding: 25px;
-            
+
             /* Text inside the glass card must be dark for readability */
-            color: #1f1f1f !important; 
-            min-height: 100%; /* Ensures all cards in the row are the same height */
+            color: #ffffff !important;
+            min-height: 100%;
+            /* Ensures all cards in the row are the same height */
             text-align: center;
         }
-        
+
         /* Apply the glass style to the existing dark-card selector */
         .dark-card {
             /* Inherit the new glass styles */
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(8px);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            border: none; 
+            border: none;
             border-radius: 12px;
             padding: 25px;
-            color: #1f1f1f !important; 
-            min-height: 100%; 
-            text-align: left; /* Keep the approach list left-aligned */
+            color: #ffffff !important;
+            min-height: 100%;
+            text-align: left;
+            /* Keep the approach list left-aligned */
         }
-        
+
         .dark-card ol li {
             /* Ensure list items inside the glass card are dark */
-            color: #1f1f1f !important;
+            color: #ffffff !important;
         }
 
         /* -------------------------------------- */
@@ -102,9 +108,10 @@
             list-style: disc;
             padding-left: 20px;
         }
+
         .why-partner-list li {
             /* Text for this list is outside a glass card, so it remains white */
-            color: #1f1f1f;
+            color: #ffffff;
         }
 
         /* Mobile Adjustments */
@@ -112,17 +119,17 @@
             .page-section {
                 padding: 50px 0;
             }
+
             .why-partner-list {
                 padding-left: 30px;
             }
         }
-
     </style>
 </head>
 
 <body class="text-white bg-dark">
 
-    <nav class="navbar navbar-expand-lg navbar-white fixed-top transparent-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar">
         <div class="container">
             <!-- Logo + Company Name -->
             <a class="navbar-brand d-flex align-items-center" href="#">
@@ -156,9 +163,10 @@
         <div class="container">
             <h1 class="display-5 fw-bold">Connecting Skilled IT Professionals with America’s Top Employers</h1>
             <div class="gold-line"></div>
-            <p class="lead text-dark">
-                MACH 2000 Technologies, Inc specializes in permanent, contract, and contract-to-hire staffing for U.S.-based technology roles. 
-                Our expert recruiters collaborate closely with hiring teams to ensure every placement aligns perfectly 
+            <p class="lead text-light">
+                MACH 2000 Technologies, Inc specializes in permanent, contract, and contract-to-hire staffing for
+                U.S.-based technology roles.
+                Our expert recruiters collaborate closely with hiring teams to ensure every placement aligns perfectly
                 with technical needs, team culture, and compliance standards.
             </p>
         </div>
@@ -171,13 +179,27 @@
             <div class="gold-line"></div>
 
             <div class="row g-4">
-                <div class="col-md-4"><div class="glass-card fw-bold">Software Development & Engineering</div></div>
-                <div class="col-md-4"><div class="glass-card fw-bold">Quality Assurance & Testing</div></div>
-                <div class="col-md-4"><div class="glass-card fw-bold">Data Analytics & Business Intelligence</div></div>
-                <div class="col-md-4"><div class="glass-card fw-bold">Cloud, DevOps & Infrastructure</div></div>
-                <div class="col-md-4"><div class="glass-card fw-bold">Cybersecurity & Information Assurance</div></div>
-                <div class="col-md-4"><div class="glass-card fw-bold">Project & Product Management</div></div>
-                <div class="col-md-4 offset-md-4"><div class="glass-card fw-bold">ERP / CRM / SAP Professionals</div></div>
+                <div class="col-md-4">
+                    <div class="glass-card fw-bold">Software Development & Engineering</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card fw-bold">Quality Assurance & Testing</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card fw-bold">Data Analytics & Business Intelligence</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card fw-bold">Cloud, DevOps & Infrastructure</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card fw-bold">Cybersecurity & Information Assurance</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card fw-bold">Project & Product Management</div>
+                </div>
+                <div class="col-md-4 offset-md-4">
+                    <div class="glass-card fw-bold">ERP / CRM / SAP Professionals</div>
+                </div>
             </div>
         </div>
     </section>
@@ -190,7 +212,8 @@
 
             <div class="dark-card">
                 <ol class="fs-5">
-                    <li><strong>Requirement Analysis:</strong> Understanding technical expectations and cultural fit.</li>
+                    <li><strong>Requirement Analysis:</strong> Understanding technical expectations and cultural fit.
+                    </li>
                     <li><strong>Talent Sourcing:</strong> Leveraging both our U.S. talent network and global pool.</li>
                     <li><strong>Screening & Vetting:</strong> Multi-stage skill, experience, and background checks.</li>
                     <li><strong>Placement & Onboarding:</strong> Smooth integration with HR and compliance support.</li>
@@ -228,13 +251,15 @@
     </section>
 
 
-    <footer class="bg-light text-dark py-4 mt-5">
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-1">&copy; 2025  MACH 2000 Technologies, Inc. All rights reserved.</p>
+            <p class="mb-1">&copy; 2025 MACH 2000 Technologies, Inc. All rights reserved.</p>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
-                <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Terms of Service</a></li>
-                <li class="list-inline-item"><a href="Contact_Us.html" class="text-dark text-decoration-none">Contact</a></li>
+                <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Terms of Service</a>
+                </li>
+                <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Contact</a></li>
             </ul>
         </div>
     </footer>
@@ -249,4 +274,5 @@
         });
     </script>
 </body>
+
 </html>
